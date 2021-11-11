@@ -33,3 +33,16 @@ export interface IUserState {
     loading: boolean;
     error: string | null;
 }
+
+interface Address {
+    street: string;
+    city: string;
+    zipcode: string;
+}
+export interface IUser {
+    id: number;
+    name: string;
+    username: string;
+    email: string;
+    address: Address;
+}
