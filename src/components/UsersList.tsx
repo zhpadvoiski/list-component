@@ -1,7 +1,5 @@
 import React, { useEffect } from "react";
 import { useTypedSelector } from "../hooks/useTypedSelector";
-import { fetchUsers } from "../store/action-creators/user";
-import { useDispatch } from "react-redux";
 import { useActions } from "../hooks/useActions";
 
 const UsersList: React.FC = () => {

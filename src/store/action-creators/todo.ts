@@ -23,3 +23,12 @@ export const fetchTodos = (page = 1, limit = 10) => {
         }
     };
 };
+
+export const setTodoPage = (page: number) => {
+    return (dispatch: Dispatch<ITodoAction>) => {
+        dispatch({
+            type: TodoActionsTypes.SET_TODOS_PAGE,
+            payload: page,
+        });
+    };
+};
